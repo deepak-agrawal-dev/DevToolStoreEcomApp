@@ -1,0 +1,25 @@
+@if(product()) {
+
+<section class="container detail-grid">
+
+  <div class="image card">
+    <img
+      [src]="product()?.image"
+      [alt]="product()?.title">
+  </div>
+
+  <div class="card">
+    <span class="cat">
+      {{ product()?.category }}
+    </span>
+    <h1>{{ product()?.title }}</h1>
+    <p>{{ product()?.description }}</p>
+    <h2>₹{{ product()?.price }}</h2>
+    <button class="buy-btn" (click)="addToCart()">
+      Add to Cart
+    </button>
+  </div>
+
+</section>
+
+}

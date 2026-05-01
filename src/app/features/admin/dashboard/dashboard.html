@@ -1,0 +1,32 @@
+<section class="container">
+  <div class="top-bar">
+    <h1>Admin Dashboard</h1>
+    <div class="actions">
+      <a routerLink="/home" class="secondary-btn">
+        Home
+      </a>
+      <button (click)="authService.logout()" class="logout-btn">
+        Logout
+      </button>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="card stat">
+      <h3>{{ totalProducts() }}</h3>
+      <p>Total Products</p>
+    </div>
+    <div class="card stat">
+      <h3>{{ totalOrders() }}</h3>
+      <p>Total Orders</p>
+    </div>
+    <div class="card stat">
+      <h3>₹{{ totalRevenue() }}</h3>
+      <p>Total Revenue</p>
+    </div>
+  </div>
+
+  <a routerLink="/admin/products" class="primary-btn">
+    Manage Products
+  </a>
+</section>

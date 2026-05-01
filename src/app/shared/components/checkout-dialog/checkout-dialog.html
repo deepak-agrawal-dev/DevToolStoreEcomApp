@@ -1,0 +1,52 @@
+<div class="dialog-head">
+  <h2>Secure Checkout</h2>
+  <button
+    class="close-btn"
+    (click)="close()">
+    ✕
+  </button>
+</div>
+<div class="dialog-body">
+  <mat-tab-group>
+    <mat-tab label="QR">
+      <div class="tab-box qr-wrap">
+        <img
+          src="../deepak_qr_resume.png"
+          alt="QR">
+      </div>
+    </mat-tab>
+    <mat-tab label="UPI">
+      <div class="tab-box">
+        <input placeholder="Enter UPI ID" />
+      </div>
+    </mat-tab>
+    <mat-tab label="Card">
+      <div class="tab-box">
+        <input placeholder="Card Number" />
+        <input placeholder="MM / YY" />
+        <input placeholder="CVV" />
+      </div>
+    </mat-tab>
+    <mat-tab label="Net Banking">
+      <div class="tab-box">
+        <select>
+          <option>HDFC</option>
+          <option>ICICI</option>
+          <option>SBI</option>
+        </select>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+<div class="dialog-foot">
+  <button
+    class="cancel-btn"
+    (click)="close()">
+    Cancel
+  </button>
+  <button
+    class="primary-btn"
+    (click)="pay()">
+    Pay Now
+  </button>
+</div>

@@ -1,0 +1,21 @@
+<section class="login-wrap">
+    <div class="login-box card">
+        <h1>Welcome Back</h1>
+        <input [(ngModel)]="email" placeholder="Email">
+        <input type="password" [(ngModel)]="password" placeholder="Password">
+        <button class="primary-btn" (click)="submit()">
+            @if(loading){
+                <span class="spinner"></span>
+                Signing In...
+            }@else{
+                Login
+            }
+        </button>
+        <p>
+            <span>admin@devstore.com/Pass@123</span>
+            <br />
+            <span>user@devstore.com/Pass@123</span>
+        </p>
+    </div>
+
+</section>

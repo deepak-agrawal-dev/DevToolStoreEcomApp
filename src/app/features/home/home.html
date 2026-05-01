@@ -1,0 +1,79 @@
+<section class="container">
+  <div class="product card">
+    <h1>Premium Developer Assets</h1>
+    <p>
+      Angular templates, UI kits, dashboards, resume packs and productivity tools.
+    </p>
+    <div class="buttons">
+      <a class="primary-btn" routerLink="/products">Explore Products</a>
+      <a class="secondary-btn" href="https://github.com/talktome3449" target="_blank">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trending -->
+<section class="container section-block">
+  <div class="section-head">
+    <h2>Trending Products</h2>
+    <a routerLink="/products">View All</a>
+  </div>
+  <div class="product-grid">
+    @for(item of trending(); track item.id) {
+      <app-product-card [product]="item" />
+    }
+  </div>
+</section>
+
+<!-- Featured -->
+<section class="container section-block">
+  <div class="section-head">
+    <h2>Featured Assets</h2>
+    <a routerLink="/products">View All</a>
+  </div>
+  <div class="product-grid">
+    @for(item of featured(); track item.id) {
+      <app-product-card [product]="item" />
+    }
+  </div>
+</section>
+
+<!-- Popular -->
+<section class="container section-block">
+  <div class="section-head">
+    <h2>Popular Templates</h2>
+    <a routerLink="/products">View All</a>
+  </div>
+  <div class="product-grid">
+    @for(item of popular(); track item.id) {
+      <app-product-card [product]="item" />
+    }
+  </div>
+</section>
+
+<!-- New -->
+<section class="container section-block">
+  <div class="section-head">
+    <h2>New Arrivals</h2>
+    <a routerLink="/products">View All</a>
+  </div>
+  <div class="product-grid">
+    @for(item of newArrivals(); track item.id) {
+      <app-product-card [product]="item" />
+    }
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="container why-grid">
+  <div class="card">⚡ Instant Download</div>
+  <div class="card">🔒 Secure Checkout</div>
+  <div class="card">🚀 Built for Developers</div>
+</section>
+
+<!-- CTA -->
+<section class="container cta card">
+  <h2>Ready to Upgrade Your Workflow?</h2>
+  <a routerLink="/products" class="primary-btn">
+    Browse Products
+  </a>
+</section>

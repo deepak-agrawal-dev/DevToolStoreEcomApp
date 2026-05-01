@@ -1,0 +1,39 @@
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <!-- Brand -->
+    <div>
+      <h2>DevStore</h2>
+      <p>Premium templates, UI kits & assets for developers.</p>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h4>Quick Links</h4>
+
+      <a routerLink="/home">Home</a>
+      <a routerLink="/products">Products</a>
+      <a routerLink="/login">Login</a>
+    </div>
+
+    <!-- Social -->
+    <div>
+      <h4>Connect</h4>
+
+      <div class="socials">
+        @for(link of socialLinks; track link) {
+          <a [href]="link.url" target="_blank" title="{{link.label}}">
+            <mat-icon>{{link.name}}</mat-icon>
+          </a>
+        }
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 DevStore. Developed By Deepak Agrawal.
+  </div>
+
+</footer>

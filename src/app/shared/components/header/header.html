@@ -1,0 +1,83 @@
+<header class="header">
+  <div class="container nav-wrapper">
+    <!-- Logo -->
+    <a routerLink="/home" class="logo">
+      <mat-icon>storefront</mat-icon>
+      DevStore
+    </a>
+
+    <!-- Navigation -->
+    <nav class="menu">
+      <!-- @if(!authService.isLoggedIn() && !authService.isAdmin()) {
+        <a routerLink="/admin">Admin</a>
+      } -->
+      <a routerLink="/home">Home</a>
+      <a routerLink="/products">Products</a>
+      <!-- <a routerLink="/login">Login</a> -->
+    </nav>
+
+    <!-- Search -->
+     @if (!(isMobile$ | async)?.matches) {
+      <ng-container [ngTemplateOutlet]="searchBar"></ng-container>
+     }
+
+    <!-- Right Actions -->
+    <div class="actions">
+
+      <!-- Theme Toggle -->
+      <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+        <mat-icon>dark_mode</mat-icon>
+      </button>
+
+      <mat-menu #themeMenu="matMenu">
+        <button mat-menu-item (click)="changeTheme('light')">
+          Light
+        </button>
+        <button mat-menu-item (click)="changeTheme('dark')">
+          Dark
+        </button>
+        <button mat-menu-item (click)="changeTheme('system')">
+          System
+        </button>
+      </mat-menu>
+
+      <!-- Cart -->
+      <a routerLink="/cart" class="icon-btn cart-link">
+        <mat-icon>shopping_cart</mat-icon>
+        @if(cartService.count() > 0) {
+        <span class="cart-count">
+          {{ cartService.count()}}
+        </span>
+        }
+      </a>
+
+      <!-- Login -->
+       @if(!authService.isLoggedIn()) {
+        <a routerLink="/login" class="login-btn">
+          Login
+        </a>
+       }
+
+      @if (authService.isLoggedIn()) {
+      <button (click)="authService.logout()" class="logout-btn">
+        Logout
+      </button>
+      }
+
+    </div>
+
+  </div>
+  <div>
+    @if ((isMobile$ | async)?.matches) {
+      <ng-container [ngTemplateOutlet]="searchBar"></ng-container>
+     }
+  </div>
+
+</header>
+
+<ng-template #searchBar>
+  <div class="search-box">
+    <mat-icon>search</mat-icon>
+    <input type="text" [(ngModel)]="searchText" placeholder="Search products..." />
+  </div>
+</ng-template>

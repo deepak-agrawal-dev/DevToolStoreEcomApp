@@ -1,0 +1,29 @@
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.cat {
+  color: var(--primary);
+}
+
+.buy-btn {
+  margin-top: 1rem;
+  padding: 1rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

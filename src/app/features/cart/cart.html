@@ -1,0 +1,48 @@
+<section class="container">
+  <h1>Your Cart</h1>
+  @if(cartService.items().length === 0) {
+    <div class="empty-cart card">
+      <div class="emoji">🛒</div>
+      <h2>Your Cart is Empty</h2>
+      <p>
+        Looks like you have not added
+        anything yet.
+      </p>
+      <a routerLink="/home" class="primary-btn">
+        Add Products
+      </a>
+    </div>
+  } @else {
+    <div class="cart-grid">
+      @for(item of cartService.items(); track item.id) {
+      <div class="card cart-item">
+        <img [src]="item.image">
+        <div>
+          <h3>{{ item.title }}</h3>
+          <p>₹{{ item.price }}</p>
+          <div class="qty-row">
+            <button (click)="cartService.decreaseQuantity(item.id)">
+              -
+            </button>
+            <button (click)="cartService.increaseQuantity(item.id)">
+              +
+            </button>
+            <small>
+              Qty: {{ item.quantity }}
+            </small>
+          </div>
+        </div>
+        <button class="remove-btn" (click)="cartService.removeProduct(item.id)">
+          Remove
+        </button>
+      </div>
+      }
+      <div class="card summary">
+        <h2>Total: ₹{{ cartService.total() }}</h2>
+        <button class="checkout-btn" (click)="checkout()">
+          Checkout
+        </button>
+      </div>
+    </div>
+  }
+</section>

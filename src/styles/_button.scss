@@ -1,0 +1,26 @@
+.primary-btn,
+button.primary-btn,
+a.primary-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: var(--primary);
+  color: var(--on-primary);
+
+  padding: .85rem 1.15rem;
+  border-radius: 12px;
+
+  font-weight: 600;
+  transition: .25s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.primary-btn:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}

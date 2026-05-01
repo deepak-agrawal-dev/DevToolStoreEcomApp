@@ -1,0 +1,17 @@
+<h1>Products</h1>
+<a routerLink="/admin/add-product" class="primary-btn">
+    Add Product
+</a>
+@for(item of products(); track item.id){
+<div class="card row">
+    <span>{{ item.title }}</span>
+    <div>
+        <a [routerLink]="['/admin/edit',item.id]">
+            Edit
+        </a>
+        <!-- <button (click)="delete(item.id)">
+            Delete
+        </button> -->
+    </div>
+</div>
+}

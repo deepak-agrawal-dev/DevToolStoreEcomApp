@@ -1,0 +1,66 @@
+.dialog-head,
+.dialog-foot {
+  display: flex;
+  align-items: center;
+}
+
+.dialog-head {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.dialog-foot {
+  justify-content: flex-end;
+  gap: .75rem;
+  // margin-top: 1rem;
+  padding: 1rem;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.dialog-body {
+  min-height: 300px;
+  padding: 0 1rem;
+  padding: 0 1rem;
+}
+
+.tab-box {
+  display: grid;
+  gap: .8rem;
+  padding: 1rem 0;
+}
+
+.tab-box input,
+.tab-box select {
+  padding: .85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.qr-wrap {
+  place-items: center;
+}
+
+.qr-wrap img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.cancel-btn {
+  padding: .8rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  margin-left: 1rem;
+  color: #000;
+  background: orange;
+  font-weight: 600;
+}

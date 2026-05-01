@@ -1,0 +1,44 @@
+.login-wrap {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+.login-box {
+  width: 420px;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.login-box input {
+  padding: .9rem;
+}
+
+
+.spinner {
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid white;
+  border-top-color: transparent;
+
+  border-radius: 50%;
+
+  display: inline-block;
+  margin-right: .5rem;
+
+  animation: spin .7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 720px) {
+
+  .login-box {
+    width: 320px;
+  }
+
+}

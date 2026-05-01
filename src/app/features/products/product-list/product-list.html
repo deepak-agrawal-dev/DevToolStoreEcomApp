@@ -1,0 +1,37 @@
+@if(loading()){
+<div class="grid">
+  @for(item of skeletonItems; track item){
+    <div class="skeleton-card"></div>
+  }
+</div>
+}@else{
+<section class="container">
+  <div class="toolbar card">
+    <!-- <input
+      placeholder="Search products..."
+      (input)="searchText.set($any($event.target).value)" /> -->
+      <input
+      placeholder="Search products..."
+      (input)="search$.next($any($event.target).value)" />
+    <select
+      (change)="selectedCategory.set($any($event.target).value)">
+      <option value="all">All</option>
+      <option value="dashboard">Dashboard</option>
+      <option value="ui-kit">UI Kit</option>
+      <option value="resume">Resume</option>
+      <option value="portfolio">Portfolio</option>
+    </select>
+    <select
+      (change)="sortBy.set($any($event.target).value)">
+      <option value="default">Sort</option>
+      <option value="low">Price Low</option>
+      <option value="high">Price High</option>
+    </select>
+  </div>
+  <div class="grid">
+    @for(item of finalProducts(); track item.id) {
+      <app-product-card [product]="item" />
+    }
+  </div>
+</section>
+}
