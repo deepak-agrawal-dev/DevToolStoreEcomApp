@@ -9,16 +9,4 @@ import { RouterLink } from '@angular/router';
 })
 export class AddProduct {
   products = signal<any[]>([]);
-
-/* load(){
- this.http.get<any[]>(
- 'http://localhost:3000/products'
- ).subscribe(x=>this.products.set(x));
-}
-
-delete(id:number){
- this.http.delete(
- `http://localhost:3000/products/${id}`
- ).subscribe(()=>this.load());
-} */
 }

@@ -16,7 +16,7 @@ export class ProductService {
   /**
    * Base API URL.
    */
-  private url = 'http://localhost:3000';
+  private url = 'https://devtoolstoreecomappbackend.onrender.com';
 
   /**
    * Get all products.

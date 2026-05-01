@@ -20,7 +20,7 @@ export class Dashboard {
   ngOnInit(): void {
 
     this.http.get<any[]>(
-      'http://localhost:3000/products'
+      'https://devtoolstoreecomappbackend.onrender.com/products'
     ).subscribe(data => {
 
       this.totalProducts.set(
