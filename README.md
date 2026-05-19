@@ -17,6 +17,12 @@ Designed and developed with a strong focus on:
 
 # 🌐 Live Links
 
+## Screenshots
+<img width="473" height="373" alt="image" src="https://github.com/user-attachments/assets/e19261e2-41ff-4c60-8ad0-ffb2b10cd389" />
+
+<img width="486" height="368" alt="image" src="https://github.com/user-attachments/assets/489918a0-0322-4e3c-8881-25dc4864bfba" />
+
+
 ## Demo Credentials
 - admin@devstore.com/Pass@123
 - user@devstore.com/Pass@123
