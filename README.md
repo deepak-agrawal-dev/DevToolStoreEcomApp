@@ -1,182 +1,296 @@
-# DevToolStore
+# 🚀 DevTool Store E-Commerce Application
 
-A modern, responsive e-commerce storefront built with **Angular 21**, focused on premium UI, performance, and scalable frontend architecture.
+A modern **Angular-based E-Commerce Web Application** focused on clean UI/UX, scalable architecture, reusable components, and production-level frontend practices.
 
-🔗 Live Demo: https://your-live-url.vercel.app  
-🔗 Backend API (JSON Server): https://your-render-url.onrender.com  
-🔗 Portfolio: https://your-portfolio-url.com
-🔗 Email: agrawaldk1990@gmail.com
-🔗 Mobile: +91-9130057478
+Designed and developed with a strong focus on:
+
+- ⚡ Performance
+- 🎨 Premium UI Design
+- 📱 Fully Responsive Layout
+- 🔒 Secure Frontend Practices
+- ♿ Accessibility
+- 📈 Recruiter-Friendly Architecture
+- 🧩 Reusable Angular Components
+- 🌙 Dark/Light Theme Support
 
 ---
+
+# 🌐 Live Links
 
 ## Demo Credentials
+- admin@devstore.com/Pass@123
+- user@devstore.com/Pass@123
 
-admin@devstore.com/Pass@123
-user@devstore.com/Pass@123
+## 🔗 Live Demo
+https://dev-tool-store-ecom-app.vercel.app/
 
-## 📌 Project Overview
+## 💻 GitHub Repository
+https://github.com/talktome3449/DevToolStoreEcomApp
 
-DevStore is a marketplace concept for selling developer-focused digital products such as:
+## 🗄️ Mock API / JSON Server
+https://github.com/talktome3449/DevToolStoreEcomApp
 
-- Angular Admin Templates
-- UI Kits
-- Dashboard Components
-- Portfolio Templates
-- SaaS Landing Pages
-- Productivity Assets
-
-This project was built to demonstrate production-grade frontend engineering skills using Angular.
+## 👨‍💻 Portfolio Website
+https://deepakagrawalfolio.netlify.app
 
 ---
 
-## ✨ Features
+# 📌 Project Overview
 
-### 🛍 Storefront
+DevTool Store is a frontend-focused E-Commerce platform built using modern Angular architecture and enterprise-level UI practices.
+
+The application demonstrates:
+
+- Advanced Angular component architecture
+- State-driven UI handling
+- Reusable design systems
+- Optimized rendering techniques
+- Dynamic cart management
+- Product filtering & categorization
+- Responsive layouts for all devices
+- Clean scalable folder structure
+- Angular Signals & modern Angular syntax
+- Production deployment workflow
+
+This project was developed as a portfolio-grade application to demonstrate strong frontend engineering skills and modern Angular development practices.
+
+---
+
+# ✨ Key Features
+
+## 🛍️ E-Commerce Features
 
 - Product Listing
-- Search + Filtering
-- Product Detail Page
-- Trending / Featured / New Arrivals Sections
-- Responsive Product Cards
-
-### 🛒 Cart System
-
-- Add to Cart
-- Quantity Increase / Decrease
-- Remove Item
-- LocalStorage Persistence
-- Checkout Dialog
-
-### 🎨 UI / UX
-
-- Light / Dark / System Theme
-- Angular Material UI
-- Fully Responsive Design
-- Skeleton Loading States
-- Toast Notifications
-- Clean Micro-interactions
-
-### 🔐 Authentication
-
-- Mock Login System
-- Role Based Menus
-- Admin Dashboard UI
-- Route Guards
-
-### ⚡ Performance
-
-- Lazy Loaded Routes
-- Debounced Search
-- Optimized Images
-- Reusable Components
+- Product Details
+- Category Filtering
+- Add To Cart
+- Quantity Management
+- Dynamic Cart Summary
+- Checkout Dialog UI
+- Empty Cart State
+- Toast/Snackbar Notifications
+- Responsive Product Grid
+- Skeleton Loading UI
 
 ---
 
-## 🛠 Tech Stack
+## 🎨 UI / UX Features
 
-### Frontend
+- Premium Modern Design
+- Dark / Light Theme
+- Hover Animations
+- Smooth Transitions
+- Reusable UI Components
+- Mobile-First Responsive Design
+- Professional Dashboard Styling
 
-- Angular 21
-- TypeScript
-- Signals
-- RxJS
-- SCSS
-- Angular Material
+---
 
-### Backend (Mock API)
+## ⚡ Angular Features Used
 
-- JSON Server
-- Render Deployment
+- Angular Standalone Components
+- Angular Signals
+- Reactive Forms
+- Custom Directives
+- Route-Based Architecture
+- Lazy-Friendly Structure
+- RxJS Observables
+- HTTP Client API Integration
+- Component Reusability
+- Dynamic Rendering using `@for`, `@if`
 
-### Hosting
+---
+
+# 🔒 Security & Production Practices
+
+- Encoded Login Credentials
+- Form Validation
+- Input Sanitization Practices
+- Scalable Folder Structure
+- API Separation Ready
+- Production Build Optimization
+
+---
+
+# 📱 Responsive Design
+
+Fully optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+# 🧱 Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Angular 20+ | Frontend Framework |
+| TypeScript | Application Logic |
+| Angular Material | Dialogs & UI Components |
+| RxJS | Reactive Programming |
+| SCSS | Styling |
+| JSON Server | Mock Backend |
+| Vercel | Deployment |
+| GitHub | Version Control |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+src/
+│
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── models/
+│   ├── shared/
+│   ├── directives/
+│   ├── guards/
+│   ├── interceptors/
+│   └── pipes/
+│
+├── assets/
+├── environments/
+└── styles/
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/talktome3449/DevToolStoreEcomApp.git
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 3️⃣ Run Angular Application
+
+```bash
+ng serve
+```
+
+Navigate to:
+
+```bash
+http://localhost:4200
+```
+
+---
+
+## 4️⃣ Run JSON Server
+
+```bash
+npm install -g json-server
+```
+
+```bash
+json-server --watch db.json
+```
+
+---
+
+# 🚀 Deployment
+
+## Frontend Deployment
 
 - Vercel
 
+## Backend Mock API
+
+- JSON Server / Render Ready
+
 ---
 
-## 📁 Folder Structure
-src/
- ├── core/
- │   ├── services/
- │   ├── guards/
- │   └── models/
- ├── layouts/
- ├── shared/
- ├── features/
- │   ├── home/
- │   ├── products/
- │   ├── cart/
- │   ├── auth/
- │   └── admin/
- └── styles/
+# 📈 Performance Optimizations
 
-# Authentication
+- Lazy-ready component structure
+- Optimized SCSS architecture
+- Reduced unnecessary DOM rendering
+- Reusable UI patterns
+- Skeleton loaders
+- Lightweight state handling
+- Responsive image handling
 
-Demo auth uses mocked encoded credentials. Real systems use JWT + bcrypt.
+---
 
+# ♿ Accessibility Future Improvements
 
-## Development server [Run on Local Machine]
+- Semantic HTML
+- Keyboard-friendly interactions
+- Proper button roles
+- Accessible forms
+- Color contrast optimization
+- Responsive typography
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+# 🔮 Future Improvements
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js + MongoDB Backend
+- JWT Authentication
+- Payment Gateway Integration
+- Admin Dashboard
+- Order Management
+- Wishlist
+- Product Search
+- PWA Support
+- Unit Testing
+- CI/CD Pipeline
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# 👨‍💻 About Me
 
-```bash
-ng generate component component-name
-```
+## Deepak Agrawal
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Frontend Developer with 10+ years of experience in:
 
-```bash
-ng generate --help
-```
+- Angular
+- JavaScript
+- TypeScript
+- RxJS
+- Bootstrap
+- Enterprise UI Development
 
-## Building
+Focused on building scalable, responsive, and high-performance web applications with modern frontend architecture.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+# 📬 Contact
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Portfolio
+https://deepakagrawalfolio.netlify.app
 
-## Running unit tests
+## GitHub
+https://github.com/talktome3449
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## LinkedIn
+https://www.linkedin.com/in/agrawaldk1990
 
-```bash
-ng test
-```
+## WhatsApp & Phone
++91-9130057478
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+# 📜 License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-## Run Locally
-
-npm install
-ng serve
-
-json-server --watch db.json --port 3000
+This project is developed for portfolio and learning purposes.
 
 ## ⭐ If you liked this project, feel free to star the repo.
