@@ -31,10 +31,10 @@ Designed and developed with a strong focus on:
 https://dev-tool-store-ecom-app.vercel.app/
 
 ## 💻 GitHub Repository
-https://github.com/talktome3449/DevToolStoreEcomApp
+https://github.com/deepak-agrawal-dev/DevToolStoreEcomApp
 
 ## 🗄️ Mock API / JSON Server
-https://github.com/talktome3449/DevToolStoreEcomApp
+https://github.com/deepak-agrawal-dev/DevToolStoreEcomApp
 
 ## 👨‍💻 Portfolio Website
 https://deepakagrawalfolio.netlify.app
@@ -171,7 +171,7 @@ src/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/talktome3449/DevToolStoreEcomApp.git
+git clone https://github.com/deepak-agrawal-dev/DevToolStoreEcomApp.git
 ```
 
 ---
@@ -283,10 +283,10 @@ Focused on building scalable, responsive, and high-performance web applications 
 https://deepakagrawalfolio.netlify.app
 
 ## GitHub
-https://github.com/talktome3449
+https://github.com/deepak-agrawal-dev
 
 ## LinkedIn
-https://www.linkedin.com/in/agrawaldk1990
+https://www.linkedin.com/in/deepakagrawal-ng
 
 ## WhatsApp & Phone
 +91-9130057478
