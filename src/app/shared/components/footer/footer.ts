@@ -11,8 +11,8 @@ import { RouterLink } from '@angular/router';
 export class Footer {
 
   socialLinks: any = [
-    {id: 1, name: 'code', url: 'https://github.com/talktome3449', label: 'GitHub'},
-    {id: 2, name: 'work', url: 'https://github.com/talktome3449', label: 'Website'},
-    {id: 3, name: 'mail', url: 'https://github.com/talktome3449', label: 'Email'},
+    {id: 1, name: 'code', url: 'https://github.com/deepak-agrawal-dev', label: 'GitHub'},
+    {id: 2, name: 'work', url: 'https://deepakagrawalfolio.netlify.app', label: 'Website'},
+    {id: 3, name: 'mail', url: 'agrawaldk1990@gmail.com', label: 'Email'},
   ];
 }
